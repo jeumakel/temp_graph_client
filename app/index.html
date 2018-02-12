@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width" />
+    <title>
+        Raspberry Pi Status
+    </title>
+    <!-- Socket.io import the module I have in the project -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Javascript Highcharts import the file directly from your server -->
+    <script src="http://code.highcharts.com/highcharts.js"></script> 
+</head>
+<body>
+    <!--  'll have the div where the graph. I tell it that the width of the 
+         screen is 100% and the height is 400px -->
+    <div id="chart" style="width:100%; height:400px;"></div>
+    <button onclick="app.cpuButtonClicked()">get cpu temp</button>
+    <button onclick="app.sensorButtonClicked()">get sensor data</button>
+    <script src="main.js"></script>
+</body>
+</html>
